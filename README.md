@@ -3,7 +3,7 @@
 This is the GitHub repository for the paper "RoadFormer: Road-Anchored Adversarial Dynamic Graph Transformer for Unlimited-Range Traffic Incident Impact Prediction", which is accepted by IEEE Big Data 2023.
 
 ## Dataset
-The benchmark dataset can be found in the [Google Drive directory](https://drive.google.com/drive/folders/1URLGyHeus2IkMZdxSiNrafxgF_nRwSjP?usp=drive_link). 
+The benchmark dataset can be found in the [Google Drive directory](https://drive.google.com/drive/folders/1RmHO_IfctSXWCfFG8TwKNl-2Jr8PVuAe?usp=drive_link). 
 
 Below is some information about the dataset:
 
