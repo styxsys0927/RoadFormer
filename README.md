@@ -11,7 +11,7 @@ Below is some information about the dataset:
 | filename              | # cases | # sensors/roads | # timestamps                         | features         | shape               |
 | --------------------- | ------- | --------------- | ------------------------------------ | ---------------- | ------------------- |
 | graph_data_full.npy   | 5,668   | 1,663           | 18 (12 before the incident, 6 after) | speed, occupancy | (5668, 18, 1663, 2) |
-| graph_label_full.npy  | 5,668   | 1,663           |	eid, 5-min, rid, type_id, dists, <br>dur (s), q_len (m) |	(5668, 7)           |
+| graph_label_full.npy  | 5,668   | 1,663           |	| eid, 5-min, rid, type_id, dists, <br>dur (s), q_len (m) |	(5668, 7)           |
 | adj_sr.csv		        | /       | 1,663		        |                                      | 1 if a sensor is on the road, else 0	| (1663, 1663) |
 | adj_rr.csv		        | /       | 32		          |                                      | 1 if two roads intersect, else 0	| (32, 32) |
 
@@ -19,7 +19,7 @@ Below is some information about the dataset:
 | filename              | # cases | # sensors/roads | # timestamps                         | features         | shape               |
 | --------------------- | ------- | --------------- | ------------------------------------ | ---------------- | ------------------- |
 | graph_data_full.npy   | 1,452   | 1,150           | 18 (12 before the incident, 6 after) | speed, occupancy | (1452, 18, 1150, 2) |
-| graph_label_full.npy  | 1,452   | 1,150           |	eid, 5-min, rid, type_id, dists, <br>dur (s), q_len (m) |	(1452, 7)           |
+| graph_label_full.npy  | 1,452   | 1,150           |	| eid, 5-min, rid, type_id, dists, <br>dur (s), q_len (m) |	(1452, 7)           |
 | adj_sr.csv		        | /       | 1,150		        |                                      | 1 if a sensor is on the road, else 0	| (1150, 1150) |
 | adj_rr.csv		        | /       | 28		          |                                      | 1 if two roads intersect, else 0	| (28, 28) |
 
