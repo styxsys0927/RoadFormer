@@ -34,3 +34,16 @@ Specifically, among the features in "graph_label_full.npy", "dur (s)" and "q_len
 | dists  | Distance of the incident from the start of the road.  |
 | dur (s)  | Incident duration in seconds  |
 | q_len (m)  | Queue length in meters  |
+
+To use the dataset, please cite
+
+```
+@inproceedings{sun2023roadformer,
+  title={RoadFormer: Road-Anchored Adversarial Dynamic Graph Transformer for Unlimited-Range Traffic Incident Impact Prediction},
+  author={Sun, Yanshen and Fu, Kaiqun and Lu, Chang-Tien},
+  booktitle={2023 IEEE International Conference on Big Data (BigData)},
+  pages={895--904},
+  year={2023},
+  organization={IEEE}
+}
+```
