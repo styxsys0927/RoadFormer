@@ -14,6 +14,8 @@ Below is some information about the dataset:
 | graph_label_full.npy  | 5,668   | 1,663           |	| eid, 5-min, rid, type_id, dists, <br>dur (s), q_len (m) |	(5668, 7)           |
 | adj_sr.csv		        | /       | 1,663		        |                                      | 1 if a sensor is on the road, else 0	| (1663, 1663) |
 | adj_rr.csv		        | /       | 32		          |                                      | 1 if two roads intersect, else 0	| (32, 32) |
+| adj_ss.npy		        | /       | 1,663		        |                                      | 1 if adj_sr @ adj_rr @ adj_sr.T > 0, else 0	| (1663, 1663) |
+| sensors_dists.csv     | /       | 1,663	          |                                      | ID, dists, rid | (1,663, 3) |
 
 ### Incident-SB
 | filename              | # cases | # sensors/roads | # timestamps                         | features         | shape               |
@@ -22,6 +24,8 @@ Below is some information about the dataset:
 | graph_label_full.npy  | 1,452   | 1,150           |	| eid, 5-min, rid, type_id, dists, <br>dur (s), q_len (m) |	(1452, 7)           |
 | adj_sr.csv		        | /       | 1,150		        |                                      | 1 if a sensor is on the road, else 0	| (1150, 1150) |
 | adj_rr.csv		        | /       | 28		          |                                      | 1 if two roads intersect, else 0	| (28, 28) |
+| adj_ss.npy		        | /       | 1,150		        |                                      | 1 if adj_sr @ adj_rr @ adj_sr.T > 0, else 0	| (1150, 1150) |
+| sensors_dists.csv     | /       | 1,150	          |                                      | ID, dists, rid | (1,150, 3) |
 
 Specifically, among the features in "graph_label_full.npy", "dur (s)" and "q_len (m)" are the temporal and spatial impact to be predicted, while the others are sample-level attributes that might assist impact prediction.
 
@@ -34,6 +38,14 @@ Specifically, among the features in "graph_label_full.npy", "dur (s)" and "q_len
 | dists  | Distance of the incident from the start of the road.  |
 | dur (s)  | Incident duration in seconds  |
 | q_len (m)  | Queue length in meters  |
+
+"sensors_dists.csv" denotes the relative distances from sensors to the beginning of the corresponding roads. 
+
+| feature name  | description |
+| ------------- | ------------- |
+| ID  | Sensor ID defined by [PeMS](https://pems.dot.ca.gov/). You may find the sensors' metadata by these IDs.  |
+| dists  | Distance of the sensor from the start of the road. |
+| rid  | Road ID of the sensor.  |
 
 To use the dataset, please cite
 
