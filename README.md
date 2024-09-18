@@ -43,7 +43,7 @@ Specifically, among the features in "graph_label_full.npy", "dur (s)" and "q_len
 
 | feature name  | description |
 | ------------- | ------------- |
-| ID  | Sensor ID defined by [PeMS](https://pems.dot.ca.gov/). You may find the sensors' metadata by these IDs.  |
+| ID  | Sensor ID.  |
 | dists  | Distance of the sensor from the start of the road. |
 | rid  | Road ID of the sensor.  |
 
