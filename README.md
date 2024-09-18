@@ -15,7 +15,7 @@ Below is some information about the dataset:
 | adj_sr.csv		        | /       | 1,663		        |                                      | 1 if a sensor is on the road, else 0	| (1663, 32) |
 | adj_rr.csv		        | /       | 32		          |                                      | 1 if two roads intersect, else 0	| (32, 32) |
 | adj_ss.npy		        | /       | 1,663		        |                                      | 1 if adj_sr @ adj_rr @ adj_sr.T > 0, else 0	| (1663, 1663) |
-| sensors_dists.csv     | /       | 1,663	          |                                      | ID, dists, rid | (1,663, 3) |
+| sensors_dists.csv     | /       | 1,663	          |                                      | ID, dists, rid | (1663, 3) |
 
 ### Incident-SB
 | filename              | # cases | # sensors/roads | # timestamps                         | features         | shape               |
@@ -25,7 +25,7 @@ Below is some information about the dataset:
 | adj_sr.csv		        | /       | 1,150		        |                                      | 1 if a sensor is on the road, else 0	| (1150, 28) |
 | adj_rr.csv		        | /       | 28		          |                                      | 1 if two roads intersect, else 0	| (28, 28) |
 | adj_ss.npy		        | /       | 1,150		        |                                      | 1 if adj_sr @ adj_rr @ adj_sr.T > 0, else 0	| (1150, 1150) |
-| sensors_dists.csv     | /       | 1,150	          |                                      | ID, dists, rid | (1,150, 3) |
+| sensors_dists.csv     | /       | 1,150	          |                                      | ID, dists, rid | (1150, 3) |
 
 Specifically, among the features in "graph_label_full.npy", "dur (s)" and "q_len (m)" are the temporal and spatial impact to be predicted, while the others are sample-level attributes that might assist impact prediction.
 
